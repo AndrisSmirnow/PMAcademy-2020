@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+  }
+  .container > div {
+    width: 10vw;
+    height: 10vw;
+  }
+  .pink {
+    position: relative;
+    background: #ff8e8e;
+    top: 5vw;
+    left: 5vw;
+    z-index: 3;
+    transition-duration: 1000ms;
+  }
+  .blue {
+    position: relative;
+    background: #838fec;
+    top: 11vw;
+    left: 1vw;
+    z-index: 2;
+    transition-duration: 1000ms;
+  }
+  .green {
+    position: relative;
+    background: #52f09d;
+    top: 17vw;
+    right:3vw;
+    z-index: 1;
+    transition-duration: 1000ms;
+  }
+  .container div:hover {
+    z-index: 4;
+    transform: scale(1.25) rotate(1turn); 
+  }
+  .pink:hover {
+    background-color: #ff5f5f; 
+  }
+  .blue:hover {
+    background-color: #5665da;
+  }
+  .green:hover {
+    background-color: #1ae077;
+  }
