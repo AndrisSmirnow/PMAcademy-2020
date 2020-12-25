@@ -1,0 +1,79 @@
+.top-menu {
+    background-color: blueviolet;
+}
+
+.header {
+    background-color: cornflowerblue;
+}
+
+.menu {
+    /* background-color: darkslategray; */
+}
+
+/* .block456 {
+    background-color: ;
+} */
+
+.news {
+    background-color: limegreen; 
+}
+
+.alert {
+    background-color: aquamarine;
+}
+
+.slider {
+    background-color: lightcoral;
+}
+
+.new-products {
+    background-color: rgb(238, 194, 84); 
+}
+
+.recommended-products {
+    background-color: rgb(128, 247, 81);
+}
+
+.sale-products {
+    background-color: rgb(238, 194, 84);
+}
+
+.promotions {
+    background-color: rgb(128, 247, 81);
+}
+
+.buy-now-products {
+    /* background-color: rgb(248, 132, 132); */
+}
+
+.brands {
+   /* background-color: rgb(99, 212, 150); */
+}
+
+.advantages {
+    /* background-color: rgb(243, 125, 243); */
+}
+
+.reasons {
+   /* background-color: rgb(238, 194, 84); */
+}
+
+.digits {
+    /*background-color: rgb(232, 248, 255);*/
+}
+
+.how-to-work {
+    background-color: rgb(250, 210, 210);
+}
+
+.additional-info {
+    /* background-color: rgb(252, 227, 252); */
+}
+
+.big-footer {
+    background-color: yellowgreen;
+}
+
+.small-footer {
+    background-color: tomato;
+}

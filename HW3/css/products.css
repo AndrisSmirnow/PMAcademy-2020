@@ -1,0 +1,315 @@
+.new-products, .recommend-products, .sale-products, .promotions {
+    margin-top: 15px;
+}
+
+.top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.top span {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    height: 1px;
+    background-color: #dbdee6;
+}
+
+.top__title {
+    color: #040d0d;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    position: relative;
+}
+
+.top__right {
+    font-weight: 300;
+    font-size: 13px;
+    color: #4673ab;
+    text-decoration: underline;
+    padding-left: 12px;
+}
+
+.items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.items-column {
+    max-width: 250px;
+    min-width: 206px;
+    margin: 0 5px;
+}
+
+/* ======================== item ========================== */
+
+.item {
+    min-height: 100%;
+    border: 1px solid #dbdee6;
+    border-radius: 10px;
+    padding: 15px 10px 20px;
+    position: relative;
+    transition-property: border-color;
+    transition-duration: 0.2s;
+}
+
+.item:hover {
+    border-color: #ff5e1e;
+}
+
+.item__sticker {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    top: -3px;
+    left: 11px;
+    text-transform: uppercase;
+    width: 34px;
+    height: 34px;
+}
+
+.item__sticker:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 4px;
+    left: 0;
+    bottom: -64%;
+    border-right: 17px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 17px solid transparent;
+}
+
+.item__sticker_new {
+    font-size: 10px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #42c16c;
+}
+
+.item__sticker_new:after {
+    border-top: 11px solid #42c16c;
+}
+
+.item__sticker_recommend {
+    background-color: #f7c159;
+}
+
+.item__sticker_recommend:after {
+    border-top: 11px solid #f7c159;
+}
+
+.item__sticker_recommend img {
+    padding-bottom: 3px;
+}
+
+.item__sticker_sale {
+    background-color: #499ad9;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+}
+
+.item__sticker_sale:after {
+    content: "";
+    border-top: 11px solid #499ad9;
+}
+
+.item__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.item__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    height: 190px;
+    margin-bottom: 20px;
+}
+
+.item__image img {
+    max-width: 100%;
+    max-height: 190px;
+}
+
+.item__label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4673ab;
+    text-decoration: underline;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.item__label:hover {
+    color: #ff5e1e;
+}
+
+.item__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.item__text {
+    font-weight: 300;
+    color: #040d0d;
+    font-size: 13px;
+    margin-right: 4px;
+}
+
+.item__value {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 9px;
+}
+
+.item__old-value {
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #ff5e1e;
+}
+
+.item__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.item__btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #ff5e1e;
+    padding: 14px 15px 10px 15px;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 3px 0px 0px #c44817;
+    box-shadow: 0px 3px 0px 0px #c44817;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.item__btn:hover {
+    background-color: #4673ab;
+    -webkit-box-shadow: 0px 3px 0px 0px #365884;
+    box-shadow: 0px 3px 0px 0px #365884;
+}
+
+.item__btn span {
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+
+.item__btn span:before {
+    content: "";
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    background: url("../img/icons/cart-white.png") 0px 0px no-repeat;
+}
+
+.item__details {
+    color: #4673ab;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* ======================== item end ========================== */
+
+@media (max-width: 980px) {
+    .top__title {
+        padding-right: 57px;
+        line-height: 24px;
+    }
+    .top__title:after {
+        content: "";
+        width: 10px;
+        height: 24px;
+        background: url("../img/icons/arrow-blue.png") 0px 0px no-repeat;
+        position: absolute;
+        right: 28px;
+        top: 0;
+    }
+    .top__title:after {
+        background: url("../img/icons/arrow-blue.webp") 0px 0px no-repeat
+    }
+    .top__right {
+        font-size: 0;
+        padding-left: 87px;
+    }
+}
+
+.page-content {
+    position: relative;
+    padding: 0px 30px;
+}
+
+@media (max-width: 980px) {
+    .page-content {
+        padding: 0;
+    }
+}
+
+.items-column:nth-of-type(1n+5) {
+    display: none;
+}

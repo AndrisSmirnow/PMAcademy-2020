@@ -1,0 +1,124 @@
+:root {
+    --page-width: 1180px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-family: "Roboto" !important;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #000;
+    font-size: 14px;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.small {
+    display: none !important;
+}
+
+.items {
+    justify-content: space-evenly;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.block456 {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr) minmax(65%, 1fr));
+}
+
+.block456-right {
+    display: grid;
+}
+
+/* no grid styles */
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.container {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* media */
+
+@media all and (max-width: 420px) {
+    .menu, .block456, .buy-now-products, .brands, .advantages, .reasons, .digits, .small-footer {
+        display: none;
+    }
+    .items-column:nth-of-type(1n+2), .column-actions:nth-of-type(1n+2) {
+        display: none;
+    }
+    .items {
+        justify-content: center;
+    }
+    .big-footer__social {
+        padding-left: 30px;
+    }
+    .contacts__box_footer {
+        flex: 0 0 120px;
+        width: 120px;
+    }
+}
+
+@media all and (max-width: 668px) {
+    .menu, .block456, .buy-now-products, .brands, .advantages, .reasons, .digits, .small-footer {
+        display: none;
+    }
+    .items-column:nth-of-type(1n+3), .column-actions:nth-of-type(1n+3) {
+        display: none;
+    }
+    .items {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 888px) {
+    .items-column:nth-of-type(1n+4), .column-actions:nth-of-type(1n+4) {
+        display: none;
+    }
+}
+
+@media all and (max-width: 980px) {
+    .items-column:nth-of-type(1n+5), .column-actions:nth-of-type(1n+5) {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1150px) {
+    .menu {
+        display: none;
+    }
+}
